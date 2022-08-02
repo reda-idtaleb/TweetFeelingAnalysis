@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="707.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EvaluationController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="-1.0" prefHeight="115.0" prefWidth="709.0" text="Evaluation du taux d'erreur du classifieur :" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="clfName" alignment="CENTER" layoutY="88.0" prefHeight="69.0" prefWidth="707.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="pourcentage" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="152.0" prefHeight="181.0" prefWidth="706.0" textFill="#ff9ecd">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" alignment="CENTER" layoutX="-1.0" layoutY="263.0" prefHeight="69.0" prefWidth="702.0" style="-fx-background-color: transparent;" text="ici vous pouvez visualiser l'évaluation du classifieur" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="bc" layoutX="64.0" layoutY="330.0" prefHeight="354.0" prefWidth="586.0" style="-fx-background-color: white;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM">
+               <tickLabelFont>
+                  <Font size="10.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT">
+               <tickLabelFont>
+                  <Font size="10.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

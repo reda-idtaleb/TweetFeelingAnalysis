@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="707.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SentimentController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="18.0" layoutY="96.0" prefHeight="507.0" prefWidth="667.0" style="-fx-background-color: white;" visible="false" />
+      <Label fx:id="title" alignment="CENTER" layoutY="42.0" prefHeight="107.0" prefWidth="707.0" text=" Lancez une recherche !" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
