@@ -1,27 +1,27 @@
 # TweetFeelingAnalysis
 
-# Objectif
-Création d'une application qui sert à analyser le comportement des utilisateurs de Twitter à travers leurs tweets.
+# Objective
+Creation of an application used to analyze the behavior of Twitter users through their tweets.
 
-# Contexte 
-L'application TweetFeelingAnalysis est une application d'annalyse de comportement des utilisateurs Twitter. Cette application permet à l'utilisateur d'effectuer une requête puis afficher son résultat. Une reqûete est une recherche de tweets à partir d'un mot clé(nom d'un hasghtag utilisé sur twitter) saisi par un utilisateur. Le résultat d'une requéte est un affichage des tweets(récupérés par l'API Twitter) avec leurs classifications. La classification d'un tweet est définit par le sentiment des mots utilisés, c'est à dire soit un sentiment(resp.) positif, soit négatif, soit neutre.
+# Context
+The TweetFeelingAnalysis application is a Twitter user behavior analysis application. This application allows the user to perform a query and then display its result. A query is a search for tweets based on a keyword (name of a hashtag used on twitter) entered by a user. The result of a query is a display of tweets (retrieved by the Twitter API) with their classifications. The classification of a tweet is defined by the feeling of the words used, ie either a feeling (resp.) positive, or negative, or neutral.
 
-**Note: L'application permet de définir le comportement des utilisateurs que sur les 3 sujets suivants: vlille, éléction présidentielles, équipe de france**
+**Note: The application allows user behavior to be defined only on the following 3 subjects: city, presidential election, French team**
 
-# Execution de l'application
-Téléchargez le projet et situez vous dans sa racine et executez la commande:
+# Application execution
+Download the project and go to its root and run the command:
 ```
 java --module-path lib --add-modules javafx.controls,javafx.fxml -jar app.jar
-``` 
+```
 
-# Les classifieurs
-## Simple Classifier(ou Naive Classifier)
-C'est un classifieur qui définit le comportement d'un tweet en se basant sur les mots clés utilisés. L'approche naïve vérifie l'existence des mots clés(utilisés dans un tweet) dans une base des mots négatifs/positifs.
-## KNN Classifier
-C'est un classifieur qui prédit le comportement d'un tweet en se basant sur une base d'apprentissage. KNNClassifier implémente l'algorithme de classification KNN en utilisant la distance de Levenstien. L'utilisation de cette distance permet de trouver les plus proches voisins d'un tweet. L'algorithme termine par déduire la classe du tweet à partir de ces voisins.
+# Classifiers
+## Simple Classifier (or Naive Classifier)
+It is a classifier that defines the behavior of a tweet based on the keywords used. The naive approach verifies the existence of keywords (used in a tweet) in a database of negative/positive words.
+##KNN Classify
+It is a classifier that predicts the behavior of a tweet based on a learning base. KNNClassifier implements the KNN classification algorithm using the Levenstien distance. Using this distance finds the nearest neighbors of a tweet. The algorithm ends up deducing the class of the tweet from these neighbors.
 ## Bayes
-Les classifieurs utilisant la classification bayesienne sont basés sur une classe
-NGramme qui peut représenter des uni-grammes comme des bi-grammes. Les classes
-PresenceBayesClassifier et FrequencyBayesClassifier utilisent la classe NGramme, il
-suffit donc de leur donner une liste d'entiers représentant les degrés des n-grammes à
-traiter.
+Classifiers using Bayesian classification are class-based
+NGram that can represent uni-grams as well as bi-grams. The classes
+PresenceBayesClassifier and FrequencyBayesClassifier use the NGram class, it
+therefore suffices to give them a list of integers representing the degrees of the n-grams to
+treat.
