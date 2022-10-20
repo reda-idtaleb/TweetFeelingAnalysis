@@ -17,9 +17,9 @@ java --module-path lib --add-modules javafx.controls,javafx.fxml -jar app.jar
 # Classifiers
 ## Simple Classifier (or Naive Classifier)
 It is a classifier that defines the behavior of a tweet based on the keywords used. The naive approach verifies the existence of keywords (used in a tweet) in a database of negative/positive words.
-##KNN Classify
+## KNN Classifier
 It is a classifier that predicts the behavior of a tweet based on a learning base. KNNClassifier implements the KNN classification algorithm using the Levenstien distance. Using this distance finds the nearest neighbors of a tweet. The algorithm ends up deducing the class of the tweet from these neighbors.
-## Bayes
+## Bayes classifier
 Classifiers using Bayesian classification are class-based
 NGram that can represent uni-grams as well as bi-grams. The classes
 PresenceBayesClassifier and FrequencyBayesClassifier use the NGram class, it
